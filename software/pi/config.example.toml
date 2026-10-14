@@ -1,0 +1,23 @@
+# Pedal Power Station - Pi app settings. install.sh copies this to /etc/pps/config.toml.
+
+node_name = "Pedal Power Station"
+
+pico_port = "/dev/serial0"   # GPIO14/15 UART to the Pico
+mesh_enabled = true
+mesh_port = ""               # "" finds the Meshtastic node on USB by itself
+beacon_minutes = 0           # e.g. 60 = tell the mesh every hour that you have power to share
+
+display = "epaper"           # "png" writes screen.png instead (handy for testing)
+refresh_seconds = 60
+idle_sleep_minutes = 10      # power the Pi down after this long with no button or message
+
+data_dir = "/var/lib/pps"
+
+# Optional offline map for the Map tab: a PNG of your neighborhood and its edges.
+# Export one from openstreetmap.org (Share -> Image) and copy the four edge coordinates.
+[map]
+image = ""
+north = 0.0
+south = 0.0
+west = 0.0
+east = 0.0

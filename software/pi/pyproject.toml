@@ -1,0 +1,20 @@
+[project]
+name = "pps"
+version = "0.2.0"
+description = "Pedal Power Station - Pi Zero 2 W app"
+requires-python = ">=3.11"
+dependencies = ["pillow>=10.1", "pyserial>=3.5"]
+
+[project.optional-dependencies]
+mesh = ["meshtastic>=2.3"]
+
+[project.scripts]
+pps = "pps.app:main"
+pps-cli = "pps.cli:main"
+
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["pps"]

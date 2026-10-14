@@ -73,6 +73,14 @@ Pedal Power Station is a product concept: a bicycle you can ride around the neig
 
 About **$1,500–2,750** for a one-off build with Sun Wheels and Sun Wings, including a used starter bike. The v0.2 spec, which has a 50 W solar lid in place of the wheel panels, comes to about $1,250–2,330. Prices were checked in October 2026 and will move.
 
+## Software
+
+All the code for the bike is in [`software/`](software). The **Pico 2 firmware** runs the always-on status screen and enforces the 15 mph cap, the 25 % reserve, the brakes and the Sun Wings lock. It also sets assist and pedal resistance and switches the outputs. The **Pi Zero 2 W app** runs the e-paper screen (Mesh, Energy, Map and Setup tabs), keeps the energy history and handles LoRa mesh messages. There's also a PC simulator and 39 tests. See the **[software guide](software/README.md)** to install it and for what to check before riding.
+
+| Status screen, on the stand | Status screen, riding | Pi screen, mesh messages |
+|---|---|---|
+| ![](docs/screenshots/software/status_station.png) | ![](docs/screenshots/software/status_ride_assist.png) | ![](docs/screenshots/software/pi_1_mesh.png) |
+
 ## The documents
 
 ### The Friendly Guide

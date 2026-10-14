@@ -1,0 +1,12 @@
+[Unit]
+Description=Pedal Power Station screen, mesh and energy log
+After=multi-user.target
+
+[Service]
+# Runs as root so it can power the Pi off when the Pico asks.
+ExecStart=/opt/pps/venv/bin/pps --config /etc/pps/config.toml
+Restart=on-failure
+RestartSec=3
+
+[Install]
+WantedBy=multi-user.target
