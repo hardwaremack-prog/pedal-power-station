@@ -6,6 +6,16 @@ Pedal Power Station is a product concept: a bicycle you can ride around the neig
 
 > **Status:** concept / design stage (v0.2). Not yet built or reviewed by an engineer — see [Safety](#safety).
 
+<p align="center">
+  <a href="docs/Pedal_Power_Station_Friendly_Guide.pdf"><img src="docs/screenshots/guide-cover.png" width="400" alt="Friendly Guide cover"></a>
+  &nbsp;
+  <a href="docs/Pedal_Power_Station_Spec_v0.2.pdf"><img src="docs/screenshots/spec-cover.png" width="400" alt="Concept spec v0.2 cover"></a>
+</p>
+
+📄 **[The Friendly Guide (PDF, 8 pages)](docs/Pedal_Power_Station_Friendly_Guide.pdf)**: the illustrated version, with Sun Wheels and Sun Wings
+
+📐 **[Concept Spec v0.2 (PDF, 10 pages)](docs/Pedal_Power_Station_Spec_v0.2.pdf)**: the technical version, with the power system, Pi pin map, energy budget, parts list, build plan and safety notes
+
 ---
 
 ## The goals
@@ -61,7 +71,27 @@ Pedal Power Station is a product concept: a bicycle you can ride around the neig
 
 ## Rough cost
 
-About **$1,070–1,790** for a one-off build including a used donor bike (prices checked Oct 2026; they'll move).
+About **$1,500–2,750** for a one-off build with Sun Wheels and Sun Wings, including a used starter bike. The v0.2 spec, which has a 50 W solar lid in place of the wheel panels, comes to about $1,250–2,330. Prices were checked in October 2026 and will move.
+
+## The documents
+
+### The Friendly Guide
+![All pages of the Friendly Guide](docs/screenshots/guide-pages.png)
+
+### Concept Spec v0.2
+![All pages of the Concept Spec](docs/screenshots/spec-pages.png)
+
+### Drawings
+
+| Ride mode | Station mode |
+|---|---|
+| ![Ride mode](docs/images/01_ride_mode.png) | ![Station mode](docs/images/02_station_mode.png) |
+| **Power path** | **Raspberry Pi integration** |
+| ![Power path](docs/images/03_power_path.png) | ![Pi integration](docs/images/04_pi_integration.png) |
+| **Status screen** | **Status screen (riding)** |
+| ![Status screen](docs/images/05_status_screen.png) | ![Status screen riding](docs/images/05b_status_ride.png) |
+| **Main Pi screen** | **Energy budget** |
+| ![Pi screen](docs/images/06_pi_screen.png) | ![Energy chart](docs/images/07_energy_chart.png) |
 
 ## Open questions
 
